@@ -115,7 +115,7 @@ public class LockedMe {
 			File fileSearch = new File("C:\\LockedMe\\lockedMeRepo.txt");	
 			if(fileSearch.exists())
 			    {
-				System.out.println("File exist");
+				System.out.println("File exist in the directory");
 				try {
 					//creating scanner object for reading content of file
 					Scanner scannerSearch = new Scanner(fileSearch);
