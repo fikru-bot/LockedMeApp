@@ -98,8 +98,8 @@ public class LockedMe {
 		}
 		
 		public void delete_File() {
-			System.out.println("Do you want to delete the file?");
-			File fileDel = new File("C:\\LockedMe\\lockedMeAdd.txt");
+			System.out.println("Do you want to delete the file? Type yes or no");
+			File fileDel = new File("C:\\LockedMe\\lockedMeDelete.txt");
 			Scanner inputScanner = new Scanner(System.in);
 			String input = inputScanner.nextLine();
 			if(input.equalsIgnoreCase("yes")) {
