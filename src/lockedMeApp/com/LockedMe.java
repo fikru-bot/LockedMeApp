@@ -66,7 +66,7 @@ public class LockedMe {
 		}
 
 		public void addFileToTheDirectory() {
-			 File fileRepo = new File("C:\\LockedMe\\lockedMeAdd.txt");
+			 File fileRepo = new File("C:\\LockedMe\\lockedMeFile.txt");
 				
 				if(fileRepo.exists())
 				{
@@ -75,7 +75,7 @@ public class LockedMe {
 					try
 					{
 				    //creating file writter object
-					FileWriter fileWriter = new FileWriter("C:\\LockedMe\\lockedMeAdd.txt");
+					FileWriter fileWriter = new FileWriter("C:\\LockedMe\\lockedMeFile.txt");
 					fileWriter.write("file successfully added");
 					fileWriter.close();
 					System.out.println("New file content successfully added");
@@ -89,6 +89,7 @@ public class LockedMe {
 					try {
 						//creating new file
 						fileRepo.createNewFile();
+						System.out.println("new file created");
 					}
 						catch(Exception e)
 						{
